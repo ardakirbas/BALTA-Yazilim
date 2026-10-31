@@ -3,18 +3,19 @@ void main() {
         double vize2 = 70.0;
         double fnal = 75.0;
         double ortalama = (vize1 * 0.25 + vize2 * 0.25 + fnal * 0.5);
-        
+        String mesaj;
         if (ortalama >= 85) {
-            System.out.println("Takdir aldın, ortalaman: " + ortalama);
+            mesaj="Takdir aldın";
         } 
         else if (ortalama >= 75) {
-            System.out.println("Teşekkür aldın, ortalaman: " + ortalama);
+            mesaj="Teşekkür aldın";
         } 
         else if (ortalama >= 50) {
-            System.out.println("Geçtin, ortalaman: " + ortalama);
+            mesaj="Geçtin";
         } 
         else {
-            System.out.println("Kaldın, ortalaman: " + ortalama);
+            mesaj="Kaldın";
         }
+  System.out.println(mesaj+","+"ortalaman:"+ortalama);
     }
   
